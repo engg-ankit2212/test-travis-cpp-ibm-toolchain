@@ -1,4 +1,4 @@
-language: c
+language: c++
   
 jobs:
   include:
@@ -31,7 +31,7 @@ jobs:
     group: edge
     #group: dev
     script:
-      - clang -coverage -O0 hello_world.c -o hello_world
+      - clang -coverage -O0 hello_world.cpp -o hello_world
       #- /opt/at14.0/bin/g++ hello_world.c -o hello_world
       - ./hello_world
   - dist: bionic
@@ -39,7 +39,7 @@ jobs:
     group: edge
     #group: dev
     script:
-      - clang -coverage -O0 hello_world.c -o hello_world
+      - clang -coverage -O0 hello_world.cpp -o hello_world
       #- /opt/at14.0/bin/g++ hello_world.c -o hello_world
       - ./hello_world
   - dist: focal
@@ -47,6 +47,6 @@ jobs:
     group: edge
     #group: dev
     script:
-      - clang -coverage -O0 hello_world.c -o hello_world
+      - clang -coverage -O0 hello_world.cpp -o hello_world
       #- /opt/at14.0/bin/g++ hello_world.c -o hello_world
       - ./hello_world
