@@ -5,21 +5,21 @@ jobs:
   - dist: xenial
     arch: ppc64le
     #group: edge
-    #group: dev
+    group: dev
     script:
       - /opt/at12.0/bin/g++ hello_world.cpp -o hello_world
       - ./hello_world
   - dist: bionic
     arch: ppc64le
     #group: edge
-    #group: dev
+    group: dev
     script:
       - /opt/at14.0/bin/g++ hello_world.cpp -o hello_world
       - ./hello_world
   - dist: focal
     arch: ppc64le
     #group: edge
-    #group: dev
+    group: dev
     script:
       - /opt/at14.0/bin/g++ hello_world.cpp -o hello_world
       - ./hello_world
